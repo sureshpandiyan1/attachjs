@@ -160,20 +160,7 @@ span.styl.ajs1 {
 }
 
 
-.footer_attachjs {
-  display: block;
-  margin-top: 140px;
-  
-  max-width: 94%;
-  line-height: 3em;
-  font-family: sans-serif;
-  height: 3em;
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+
 
 .footer_attachjs ul {
   margin: 0;
@@ -312,14 +299,15 @@ body {
 }
 
 .footer_attachjs {
-  display: block;
+  display: flex;
   margin-top: 140px;
-  
   max-width: 94%;
+  justify-content: flex-end;
   line-height: 3em;
   font-family: sans-serif;
   height: 3em;
   text-align: right;
+  margin-right: auto;
 }
 
 .footer_attachjs ul {
