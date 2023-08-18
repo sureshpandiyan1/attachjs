@@ -8,7 +8,7 @@ theattachjs is readymade plugins for site to use on your project, then you can s
 If you like it, give a star ⭐
 
 ## how to use it
-    import attachjs from 'attachjs'
+    import attachjs from 'theattachjs'
 
 ## license
 Unlicense
