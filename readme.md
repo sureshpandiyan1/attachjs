@@ -14,5 +14,5 @@ If you like it, give a star ⭐
 Unlicense
 
 ## copyright
-copyright @ attachjs
+copyright @ theattachjs
 
