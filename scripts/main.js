@@ -1,5 +1,5 @@
 
-function attachjs(id, contents, override, styles) {
+function theattachjs(id, contents, override, styles) {
   this.id = id;
   this.contents = contents;
   this.override = override;
@@ -7,7 +7,7 @@ function attachjs(id, contents, override, styles) {
 }
 
 
-attachjs.prototype.tags = function() {
+theattachjs.prototype.tags = function() {
   var thespace = [];
   const okkk = [];
   okkk.push(this.override.cssSelector)
@@ -60,10 +60,10 @@ attachjs.prototype.tags = function() {
   console.log(thespace)
 }
 
-attachjs.prototype.tooltip = function() {
+theattachjs.prototype.tooltip = function() {
 
   const UIJSTOOLTIPS = document.createElement('div')
-  UIJSTOOLTIPS.setAttribute('id','attachjstooltips_'+new Date().getTime())
+  UIJSTOOLTIPS.setAttribute('id','theattachjstooltips_'+new Date().getTime())
   const tcnt = this.contents.length * 10
   const COLOR =  (this.styles != undefined && this.styles.color != undefined) ? this.styles.color : '#5f5d5d';
   const BKG =  (this.styles != undefined && this.styles.background != undefined) ? this.styles.background : '#efefef';
@@ -83,7 +83,7 @@ attachjs.prototype.tooltip = function() {
 
 }
 
-attachjs.prototype.modalbox = function() {
+theattachjs.prototype.modalbox = function() {
 
     const UIJSMODALBOX = document.createElement('div')
     const UIJSMODALTEXT = document.createElement('div')
@@ -92,15 +92,15 @@ attachjs.prototype.modalbox = function() {
     DIMISSMODAL.textContent = '✖'
     DIMISSMODAL.style.cssText = 'color: black; cursor: pointer; position: absolute; right: 10px; top: 5px;   opacity: 0.8;'
 
-    UIJSMODALBOX.setAttribute('id','attachjsmodalbox_'+ new Date().getTime())
+    UIJSMODALBOX.setAttribute('id','theattachjsmodalbox_'+ new Date().getTime())
     const OVERIDE = this.override != undefined ? this.override.cssSelector : 'uijsclass'
     
     UIJSMODALBOX.setAttribute('class', OVERIDE)
 
     const COLOR = (this.styles != undefined && this.styles.color != undefined) ? this.styles.color : 'black'
     const BACKGROUND = (this.styles != undefined && this.styles.background != undefined) ? this.styles.background : '#ececec';
-    UIJSMODALTEXT.setAttribute('id','attachjsmdlbx_'+ new Date().getTime())
-    DIMISSMODAL.setAttribute('id','attachjsdmdlbx_close_'+ new Date().getTime())
+    UIJSMODALTEXT.setAttribute('id','theattachjsmdlbx_'+ new Date().getTime())
+    DIMISSMODAL.setAttribute('id','theattachjsdmdlbx_close_'+ new Date().getTime())
     UIJSMODALTEXT.style.cssText = 'margin-top: 10px;'
     
       //
@@ -135,7 +135,7 @@ function justTarget(e) {
   return event.target || event.srcElement
 }
 
-attachjs.prototype.share = function() {
+theattachjs.prototype.share = function() {
   const GETSHARE = document.getElementById(this.id)
   GETSHARE.style.position = 'relative';
   const fivesymbol = ['pinterest','twitter','facebook','envelope']
@@ -226,7 +226,7 @@ attachjs.prototype.share = function() {
 
 }
 
-attachjs.prototype.copy = function() {
+theattachjs.prototype.copy = function() {
 
   const thetx = this.contents.text
   var div = document.getElementById(this.id)
@@ -249,7 +249,7 @@ attachjs.prototype.copy = function() {
 
 
 
-attachjs.prototype.slider = function() {
+theattachjs.prototype.slider = function() {
   var t = []
   let swipenumber = 0;
   const y = new Date().getTime()
@@ -257,7 +257,7 @@ attachjs.prototype.slider = function() {
   for (let x of this.contents.url) {
     const d = document.createElement('div')
     const dt = document.createElement('div')
-    d.setAttribute('class','attachjsslide_' + y + '_' + this.id)
+    d.setAttribute('class','theattachjsslide_' + y + '_' + this.id)
 
     const im = document.createElement('img')
 
@@ -295,7 +295,7 @@ attachjs.prototype.slider = function() {
 
 
 
-attachjs.prototype.videoplayer = function() {
+theattachjs.prototype.videoplayer = function() {
   const TTHEMAINPLAYER = document.createElement('video')
   var y = []
   var k = []
@@ -440,10 +440,10 @@ attachjs.prototype.videoplayer = function() {
 }
 
 
-function attachjscreator(k) {
-  var ks = new attachjs(k.id,k.content,k.override, k.styles)
+function theattachjscreator(k) {
+  var ks = new theattachjs(k.id,k.content,k.override, k.styles)
   return ks
 }
 
 
-export default attachjscreator;
+export default theattachjscreator;
