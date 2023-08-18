@@ -162,12 +162,12 @@ span.styl.ajs1 {
 
 
 
-.footer_attachjs ul {
+.footer_theattachjs ul {
   margin: 0;
   padding: 0;
 }
 
-.footer_attachjs ul li {
+.footer_theattachjs ul li {
   display: inline;
   text-align: center;
   padding: 10px;
@@ -298,7 +298,7 @@ body {
   color: white;
 }
 
-.footer_attachjs {
+.footer_theattachjs {
   display: flex;
   margin-top: 140px;
   max-width: 94%;
@@ -310,7 +310,7 @@ body {
   margin-right: auto;
 }
 
-.footer_attachjs ul {
+.footer_theattachjs ul {
   margin: 0;
   padding: 0;
 }
@@ -323,7 +323,7 @@ body {
     gap: 60px;
 }
 
-.modal_attachjs, .share_attachjs, .copy_attachjs {
+.modal_theattachjs, .share_theattachjs, .copy_theattachjs {
     width: 40%;
     background: #f0f0f0;
     border-radius: 20px;
@@ -334,7 +334,7 @@ body {
     height: auto;
 }
 
-.footer_attachjs ul li {
+.footer_theattachjs ul li {
   display: inline;
   text-align: center;
   padding: 10px;
